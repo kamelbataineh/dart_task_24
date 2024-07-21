@@ -1,16 +1,26 @@
 bool isPalindrome(String x) {
+
   int l = 0;
   int r = x.length - 1;
+  
+
    if(x.isEmpty) {
     return true;
   }
-  else if (x[l].toUpperCase() == x[r].toUpperCase()  ) {
+  else if (x[l].toUpperCase() == x[r].toLowerCase()) {
+    return true;
+  }
+  else if (x[l].toLowerCase() == x[r].toUpperCase()) {
+    return true;
+  }
+   else if (x[l].toLowerCase() == x[r].toLowerCase()) {
     return true;
   }
    else {
     return false;
   }
 }
+
 void main(List<String> args) {
-  print(isPalindrome("alls"));
+  print(isPalindrome("QZMYezUkXq"));
 }
