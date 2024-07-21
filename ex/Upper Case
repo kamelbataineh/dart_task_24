@@ -1,0 +1,7 @@
+String makeUpperCase(String str) {
+
+return str.toUpperCase();
+}
+void main(List<String> args) {
+  print(makeUpperCase("am"));
+}
