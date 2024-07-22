@@ -1,0 +1,13 @@
+String rnaToDna(String dna) {
+dna=dna.toUpperCase();
+dna=dna.replaceAll('T', 'U');
+dna=dna.replaceAll('R', 'D');
+
+return dna;
+}
+
+
+
+void main(List<String> args) {
+  print(rnaToDna("TNA"));
+}
