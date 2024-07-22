@@ -1,0 +1,11 @@
+List<int> countBy(int x, int n) {
+  List<int> sum = [];
+  for (var i = x; i <= x * n; i += x) {
+    sum.add(i);
+  }
+  return sum;
+}
+
+void main(List<String> args) {
+  print(countBy(2, 5));
+}
