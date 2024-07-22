@@ -1,0 +1,14 @@
+int stringToNumber(String str) {
+int num;
+try{
+num=int.parse(str);
+return num;
+}
+catch(e){
+  return 4;
+}
+}
+void main(List<String> args) {
+print(stringToNumber("11111"));
+}
+//int stringToNumber(String str) => int.parse(str);
