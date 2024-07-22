@@ -9,3 +9,4 @@ List<int> countBy(int x, int n) {
 void main(List<String> args) {
   print(countBy(2, 5));
 }
+//List<int> countBy(int c, int x) => List.generate(x, (i) => (i + 1) * c);
