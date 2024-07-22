@@ -1,0 +1,1 @@
+int century(year)=>(year/100).ceil();
