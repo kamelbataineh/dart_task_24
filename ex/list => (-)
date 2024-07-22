@@ -1,0 +1,15 @@
+List<int> invert(List<int> arr) {
+  List<int> sum = [];
+  for (var i = 0; i < arr.length; i++) {
+    sum.add(-arr[i]);
+  }
+  return sum;
+}
+
+void main(List<String> args) {
+  List<int> x = [1, 2, -3, -4, 5];
+  List<int> m = invert(x);
+  print(m);
+}
+
+//List<int> invert(List<int> arr) => [for(var i in arr) -i];
