@@ -1,0 +1,12 @@
+num makeNegative(n) {
+  if (0 < n) {
+    return -n;
+  } else {
+    return n;
+  }
+}
+void main(List<String> args) {
+  print(makeNegative(5));
+}
+
+//num makeNegative(n) => -n.abs();
